@@ -1,9 +1,19 @@
-"use strict";var j=function(v,a){return function(){return a||v((a={exports:{}}).exports,a),a.exports}};var E=j(function(J,_){
-var u=require('@stdlib/math-base-assert-is-nan/dist'),S=require('@stdlib/math-base-special-floor/dist'),Z=128;function t(v,a,n,o){var r,q,s,p,m,c,l,y,w,R,f,i,e;if(v<=0)return 0;if(n===0)return u(a[o])?0:a[o]*v;if(r=o,v<8){for(f=0,e=0;e<v;e++)u(a[r])===!1&&(f+=a[r]),r+=n;return f}if(v<=Z){for(q=u(a[r])?0:a[r],r+=n,s=u(a[r])?0:a[r],r+=n,p=u(a[r])?0:a[r],r+=n,m=u(a[r])?0:a[r],r+=n,c=u(a[r])?0:a[r],r+=n,l=u(a[r])?0:a[r],r+=n,y=u(a[r])?0:a[r],r+=n,w=u(a[r])?0:a[r],r+=n,R=v%8,e=8;e<v-R;e+=8)q+=u(a[r])?0:a[r],r+=n,s+=u(a[r])?0:a[r],r+=n,p+=u(a[r])?0:a[r],r+=n,m+=u(a[r])?0:a[r],r+=n,c+=u(a[r])?0:a[r],r+=n,l+=u(a[r])?0:a[r],r+=n,y+=u(a[r])?0:a[r],r+=n,w+=u(a[r])?0:a[r],r+=n;for(f=q+s+(p+m)+(c+l+(y+w)),e;e<v;e++)u(a[r])===!1&&(f+=a[r]),r+=n;return f}return i=S(v/2),i-=i%8,t(i,a,n,r)+t(v-i,a,n,r+i*n)}_.exports=t
-});var C=j(function(P,B){
-var b=require('@stdlib/strided-base-stride2offset/dist'),g=E();function h(v,a,n){return g(v,a,n,b(v,n))}B.exports=h
-});var L=j(function(Q,K){
-var k=require('@stdlib/utils-define-nonenumerable-read-only-property/dist'),I=C(),z=E();k(I,"ndarray",z);K.exports=I
-});var A=require("path").join,D=require('@stdlib/utils-try-require/dist'),F=require('@stdlib/assert-is-error/dist'),G=L(),O,M=D(A(__dirname,"./native.js"));F(M)?O=G:O=M;module.exports=O;
-/** @license Apache-2.0 */
+"use strict";var n=function(e,r){return function(){return r||e((r={exports:{}}).exports,r),r.exports}};var i=n(function(K,t){"use strict";var c=require("@stdlib/array-float64"),w=require("@stdlib/blas-ext-base-dnannsumpw").ndarray,s=new c(2);function f(e,r,a,y){return w(e,r,a,y,s,1,0),s[0]}t.exports=f});var q=n(function(P,v){"use strict";var x=require("@stdlib/strided-base-stride2offset"),j=i();function l(e,r,a){return j(e,r,a,x(e,a))}v.exports=l});var p=n(function(S,o){"use strict";var R=require("@stdlib/utils-define-nonenumerable-read-only-property"),d=q(),A=i();R(d,"ndarray",A);o.exports=d});var E=require("path").join,O=require("@stdlib/utils-try-require"),_=require("@stdlib/assert-is-error"),C=p(),u,m=O(E(__dirname,"./native.js"));_(m)?u=C:u=m;module.exports=u;
+/**
+* @license Apache-2.0
+*
+* Copyright (c) 2020 The Stdlib Authors.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*    http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
 //# sourceMappingURL=index.js.map

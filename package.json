@@ -41,10 +41,10 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
+    "@stdlib/array-float64": "^0.2.2",
     "@stdlib/assert-is-error": "^0.2.2",
     "@stdlib/blas-base-shared": "^0.1.0",
-    "@stdlib/math-base-assert-is-nan": "^0.2.2",
-    "@stdlib/math-base-special-floor": "^0.2.3",
+    "@stdlib/blas-ext-base-dnannsumpw": "^0.2.2",
     "@stdlib/napi-argv": "^0.2.2",
     "@stdlib/napi-argv-int64": "^0.2.2",
     "@stdlib/napi-argv-strided-float64array": "^0.2.2",
@@ -57,8 +57,9 @@
   },
   "devDependencies": {
     "@stdlib/array-filled-by": "^0.2.1",
-    "@stdlib/array-float64": "^0.2.2",
     "@stdlib/assert-is-browser": "^0.2.2",
+    "@stdlib/math-base-assert-is-nan": "^0.2.2",
+    "@stdlib/math-base-assert-is-negative-zero": "^0.2.2",
     "@stdlib/math-base-special-pow": "^0.3.0",
     "@stdlib/random-base-bernoulli": "^0.2.1",
     "@stdlib/random-base-discrete-uniform": "^0.2.1",

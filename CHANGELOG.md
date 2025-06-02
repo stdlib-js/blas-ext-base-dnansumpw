@@ -4,7 +4,7 @@
 
 <section class="release" id="unreleased">
 
-## Unreleased (2025-04-26)
+## Unreleased (2025-06-02)
 
 <section class="features">
 
@@ -17,12 +17,24 @@
 
 <!-- /.features -->
 
+<section class="bug-fixes">
+
+### Bug Fixes
+
+-   [`4f0b1ca`](https://github.com/stdlib-js/stdlib/commit/4f0b1cadad99e48ee09dfd047b858e0856fed91a) - update implementation to preserve signed zeros
+
+</section>
+
+<!-- /.bug-fixes -->
+
 <section class="commits">
 
 ### Commits
 
 <details>
 
+-   [`4f0b1ca`](https://github.com/stdlib-js/stdlib/commit/4f0b1cadad99e48ee09dfd047b858e0856fed91a) - **fix:** update implementation to preserve signed zeros _(by Athan Reines)_
+-   [`6b7978b`](https://github.com/stdlib-js/stdlib/commit/6b7978b078df5869de9f2b27c8df9c34cd7b9fd0) - **test:** add signed zero tests _(by Athan Reines)_
 -   [`9f85b5d`](https://github.com/stdlib-js/stdlib/commit/9f85b5d90cb6fcaf052116cd06aa4a693757f0ec) - **test:** fix description _(by Philipp Burckhardt)_
 -   [`e0e2ab2`](https://github.com/stdlib-js/stdlib/commit/e0e2ab2955fd340371c0989c5a7a2f96991ba232) - **feat:** add `blas/ext/base/wasm/dnansumpw` [(#5968)](https://github.com/stdlib-js/stdlib/pull/5968) _(by Prashant Kumar Yadav, Athan Reines)_
 -   [`32d2b77`](https://github.com/stdlib-js/stdlib/commit/32d2b77dd2c991cadf726f929f992e109b61d92c) - **docs:** add missing API docs _(by Athan Reines)_
